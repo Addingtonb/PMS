@@ -21,7 +21,7 @@ RUN docker-php-ext-install pdo_mysql
 COPY ./default.conf /etc/nginx/sites-available/default
 
 COPY . /usr/src/app/
-COPY ./.env  /usr/src/app/.env
+# COPY ./.env  /usr/src/app/.env
 
 WORKDIR /usr/src/app/
 
