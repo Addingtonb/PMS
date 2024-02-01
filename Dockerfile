@@ -26,8 +26,7 @@ RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 # Install project dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Generate the application key
-RUN php artisan key:generate
+
 
 # Expose port 9000 for PHP-FPM
 EXPOSE 9000
